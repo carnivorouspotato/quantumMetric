@@ -50,7 +50,7 @@ describe('POST Query For All Countries & Data', () => {
             .then((res) => {
                 const responseBody = res.body.data.currencies.edges[0].node.countrySet.edges
 
-                const thatSpkEng = responseBody.map(cnty => {
+                const thatUseEuro = responseBody.map(cnty => {
                     return cnty.node.name
                 })
 
@@ -69,7 +69,7 @@ describe('POST Query For All Countries & Data', () => {
 
                 }
 
-                for (const element of thatSpkEng) {
+                for (const euro of thatUseEuro) {
                     lngFunction(element)
                 }
 
