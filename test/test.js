@@ -70,7 +70,7 @@ describe('POST Query For All Countries & Data', () => {
                 }
 
                 for (const euro of thatUseEuro) {
-                    lngFunction(element)
+                    lngFunction(euro)
                 }
 
 
